@@ -753,6 +753,7 @@ public class MainFrame extends JFrame {
 			}
 		}
 	}
+	
 
 	/*
 	 * Preset map number one is a collection of rectangular regions. (1) 16
@@ -807,258 +808,6 @@ public class MainFrame extends JFrame {
 			abstractMap[136][j] = new Anchor (7, 7, tileType);
 			abstractMap[136][j+1] = new Anchor (7, 5, tileType);
 		}
-		
-		/*
-		// Region 0, 0 of (1)
-		int tileType = (int) (Math.random() * 5);
-
-		abstractMap[15][15] = new Anchor(15, 1, tileType);
-		abstractMap[15][16] = new Anchor(15, 3, tileType);
-		abstractMap[16][15] = new Anchor(15, 7, tileType);
-		abstractMap[16][16] = new Anchor(15, 5, tileType);
-
-		// Region 0, 1 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[15][47] = new Anchor(15, 1, tileType);
-		abstractMap[15][48] = new Anchor(15, 3, tileType);
-		abstractMap[16][47] = new Anchor(15, 7, tileType);
-		abstractMap[16][48] = new Anchor(15, 5, tileType);
-
-		// Region 0, 2 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[15][79] = new Anchor(15, 1, tileType);
-		abstractMap[15][80] = new Anchor(15, 3, tileType);
-		abstractMap[16][79] = new Anchor(15, 7, tileType);
-		abstractMap[16][80] = new Anchor(15, 5, tileType);
-
-		// Region 0, 3 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[15][111] = new Anchor(15, 1, tileType);
-		abstractMap[15][112] = new Anchor(15, 3, tileType);
-		abstractMap[16][111] = new Anchor(15, 7, tileType);
-		abstractMap[16][112] = new Anchor(15, 5, tileType);
-
-		// Region 1, 0 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[47][15] = new Anchor(15, 1, tileType);
-		abstractMap[47][16] = new Anchor(15, 3, tileType);
-		abstractMap[48][15] = new Anchor(15, 7, tileType);
-		abstractMap[48][16] = new Anchor(15, 5, tileType);
-
-		// Region 1, 1 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[47][47] = new Anchor(15, 1, tileType);
-		abstractMap[47][48] = new Anchor(15, 3, tileType);
-		abstractMap[48][47] = new Anchor(15, 7, tileType);
-		abstractMap[48][48] = new Anchor(15, 5, tileType);
-
-		// Region 1, 2 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[47][79] = new Anchor(15, 1, tileType);
-		abstractMap[47][80] = new Anchor(15, 3, tileType);
-		abstractMap[48][79] = new Anchor(15, 7, tileType);
-		abstractMap[48][80] = new Anchor(15, 5, tileType);
-
-		// Region 1, 3 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[47][111] = new Anchor(15, 1, tileType);
-		abstractMap[47][112] = new Anchor(15, 3, tileType);
-		abstractMap[48][111] = new Anchor(15, 7, tileType);
-		abstractMap[48][112] = new Anchor(15, 5, tileType);
-
-		// Region 2, 0 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[79][15] = new Anchor(15, 1, tileType);
-		abstractMap[79][16] = new Anchor(15, 3, tileType);
-		abstractMap[80][15] = new Anchor(15, 7, tileType);
-		abstractMap[80][16] = new Anchor(15, 5, tileType);
-
-		// Region 2, 1 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[79][47] = new Anchor(15, 1, tileType);
-		abstractMap[79][48] = new Anchor(15, 3, tileType);
-		abstractMap[80][47] = new Anchor(15, 7, tileType);
-		abstractMap[80][48] = new Anchor(15, 5, tileType);
-
-		// Region 2, 2 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[79][79] = new Anchor(15, 1, tileType);
-		abstractMap[79][80] = new Anchor(15, 3, tileType);
-		abstractMap[80][79] = new Anchor(15, 7, tileType);
-		abstractMap[80][80] = new Anchor(15, 5, tileType);
-
-		// Region 2, 3 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[79][111] = new Anchor(15, 1, tileType);
-		abstractMap[79][112] = new Anchor(15, 3, tileType);
-		abstractMap[80][111] = new Anchor(15, 7, tileType);
-		abstractMap[80][112] = new Anchor(15, 5, tileType);
-
-		// Region 3, 0 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[111][15] = new Anchor(15, 1, tileType);
-		abstractMap[111][16] = new Anchor(15, 3, tileType);
-		abstractMap[112][15] = new Anchor(15, 7, tileType);
-		abstractMap[112][16] = new Anchor(15, 5, tileType);
-
-		// Region 3, 1 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[111][47] = new Anchor(15, 1, tileType);
-		abstractMap[111][48] = new Anchor(15, 3, tileType);
-		abstractMap[112][47] = new Anchor(15, 7, tileType);
-		abstractMap[112][48] = new Anchor(15, 5, tileType);
-
-		// Region 3, 2 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[111][79] = new Anchor(15, 1, tileType);
-		abstractMap[111][80] = new Anchor(15, 3, tileType);
-		abstractMap[112][79] = new Anchor(15, 7, tileType);
-		abstractMap[112][80] = new Anchor(15, 5, tileType);
-
-		// Region 3, 3 of (1)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[111][111] = new Anchor(15, 1, tileType);
-		abstractMap[111][112] = new Anchor(15, 3, tileType);
-		abstractMap[112][111] = new Anchor(15, 7, tileType);
-		abstractMap[112][112] = new Anchor(15, 5, tileType);
-
-		// Region 0, 0 of (2)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[7][135] = new Anchor(7, 1, tileType);
-		abstractMap[7][136] = new Anchor(7, 3, tileType);
-		abstractMap[8][135] = new Anchor(7, 7, tileType);
-		abstractMap[8][136] = new Anchor(7, 5, tileType);
-
-		// Region 1, 0 of (2)
-
-		abstractMap[23][135] = new Anchor(7, 1, tileType);
-		abstractMap[23][136] = new Anchor(7, 3, tileType);
-		abstractMap[24][135] = new Anchor(7, 7, tileType);
-		abstractMap[24][136] = new Anchor(7, 5, tileType);
-
-		// Region 2, 0 of (2)
-
-		abstractMap[39][135] = new Anchor(7, 1, tileType);
-		abstractMap[39][136] = new Anchor(7, 3, tileType);
-		abstractMap[40][135] = new Anchor(7, 7, tileType);
-		abstractMap[40][136] = new Anchor(7, 5, tileType);
-
-		// Region 3, 0 of (2)
-
-		abstractMap[55][135] = new Anchor(7, 1, tileType);
-		abstractMap[55][136] = new Anchor(7, 3, tileType);
-		abstractMap[56][135] = new Anchor(7, 7, tileType);
-		abstractMap[56][136] = new Anchor(7, 5, tileType);
-
-		// Region 4, 0 of (2)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[71][135] = new Anchor(7, 1, tileType);
-		abstractMap[71][136] = new Anchor(7, 3, tileType);
-		abstractMap[72][135] = new Anchor(7, 7, tileType);
-		abstractMap[72][136] = new Anchor(7, 5, tileType);
-
-		// Region 5, 0 of (2)
-
-		abstractMap[87][135] = new Anchor(7, 1, tileType);
-		abstractMap[87][136] = new Anchor(7, 3, tileType);
-		abstractMap[88][135] = new Anchor(7, 7, tileType);
-		abstractMap[88][136] = new Anchor(7, 5, tileType);
-
-		// Region 6, 0 of (2)
-
-		abstractMap[103][135] = new Anchor(7, 1, tileType);
-		abstractMap[103][136] = new Anchor(7, 3, tileType);
-		abstractMap[104][135] = new Anchor(7, 7, tileType);
-		abstractMap[104][136] = new Anchor(7, 5, tileType);
-
-		// Region 7, 0 of (2)
-
-		abstractMap[119][135] = new Anchor(7, 1, tileType);
-		abstractMap[119][136] = new Anchor(7, 3, tileType);
-		abstractMap[120][135] = new Anchor(7, 7, tileType);
-		abstractMap[120][136] = new Anchor(7, 5, tileType);
-
-		// Region 0, 0 of (3)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[135][7] = new Anchor(7, 1, tileType);
-		abstractMap[135][8] = new Anchor(7, 3, tileType);
-		abstractMap[136][7] = new Anchor(7, 7, tileType);
-		abstractMap[136][8] = new Anchor(7, 5, tileType);
-
-		// Region 0, 1 of (3)
-
-		abstractMap[135][23] = new Anchor(7, 1, tileType);
-		abstractMap[135][24] = new Anchor(7, 3, tileType);
-		abstractMap[136][23] = new Anchor(7, 7, tileType);
-		abstractMap[136][24] = new Anchor(7, 5, tileType);
-
-		// Region 0, 2 of (3)
-
-		abstractMap[135][39] = new Anchor(7, 1, tileType);
-		abstractMap[135][40] = new Anchor(7, 3, tileType);
-		abstractMap[136][39] = new Anchor(7, 7, tileType);
-		abstractMap[136][40] = new Anchor(7, 5, tileType);
-
-		// Region 0, 3 of (3)
-
-		abstractMap[135][55] = new Anchor(7, 1, tileType);
-		abstractMap[135][56] = new Anchor(7, 3, tileType);
-		abstractMap[136][55] = new Anchor(7, 7, tileType);
-		abstractMap[136][56] = new Anchor(7, 5, tileType);
-
-		// Region 0, 4 of (3)
-
-		abstractMap[135][71] = new Anchor(7, 1, tileType);
-		abstractMap[135][72] = new Anchor(7, 3, tileType);
-		abstractMap[136][71] = new Anchor(7, 7, tileType);
-		abstractMap[136][72] = new Anchor(7, 5, tileType);
-
-		// Region 0, 5 of (3)
-
-		abstractMap[135][87] = new Anchor(7, 1, tileType);
-		abstractMap[135][88] = new Anchor(7, 3, tileType);
-		abstractMap[136][87] = new Anchor(7, 7, tileType);
-		abstractMap[136][88] = new Anchor(7, 5, tileType);
-
-		// Region 0, 6 of (3)
-
-		abstractMap[135][103] = new Anchor(7, 1, tileType);
-		abstractMap[135][104] = new Anchor(7, 3, tileType);
-		abstractMap[136][103] = new Anchor(7, 7, tileType);
-		abstractMap[136][104] = new Anchor(7, 5, tileType);
-
-		// Region 0, 7 of (3)
-
-		abstractMap[135][119] = new Anchor(7, 1, tileType);
-		abstractMap[135][120] = new Anchor(7, 3, tileType);
-		abstractMap[136][119] = new Anchor(7, 7, tileType);
-		abstractMap[136][120] = new Anchor(7, 5, tileType);
-
-		// Region 0, 0 of (4)
-		tileType = (int) (Math.random() * 5);
-
-		abstractMap[135][135] = new Anchor(7, 1, tileType);
-		abstractMap[135][136] = new Anchor(7, 3, tileType);
-		abstractMap[136][135] = new Anchor(7, 7, tileType);
-		abstractMap[136][136] = new Anchor(7, 5, tileType); */
 
 		boolean advance;
 
@@ -1140,6 +889,423 @@ public class MainFrame extends JFrame {
 			}
 		} while (advance);
 
+		return abstractMap;
+	}
+	
+	/*
+	 * Preset Map Two is a map with crystal 16x16 corners with vertical grass in between.
+	 * Everything else in the middle is random 16x16 blocks.
+	 */
+	
+	private Anchor[][] generatePreSetMapTwo() 
+	{
+		Anchor [][] abstractMap = new Anchor[144][144];
+		int tileType = 0;
+		//Upper left crystal
+		abstractMap[7][7] = new Anchor(7,1,4);
+		abstractMap[7][8] = new Anchor(7,3,4);
+		abstractMap[8][7] = new Anchor(7,7,4);
+		abstractMap[8][8] = new Anchor(7,5,4);
+		for (int i=23;i<120;i+=16)
+		{
+			abstractMap[i][7] = new Anchor(7,1,0);
+			abstractMap[i][8] = new Anchor(7,3,0);
+			abstractMap[i+1][7] = new Anchor(7,7,0);
+			abstractMap[i+1][8] = new Anchor(7,5,0);
+		}
+		//Lower left crystal
+		abstractMap[135][7] = new Anchor(7,1,4);
+		abstractMap[135][8] = new Anchor(7,3,4);
+		abstractMap[136][7] = new Anchor(7,7,4);
+		abstractMap[136][8] = new Anchor(7,5,4);
+		
+		for (int i=7;i<136;i+=16)
+		{
+			for (int j=23;j<120;j+=16)
+			{
+				tileType = (int)(Math.random()*4);
+				abstractMap[i][j] = new Anchor(7,1,tileType);
+				abstractMap[i][j+1] = new Anchor(7,3,tileType);
+				abstractMap[i+1][j] = new Anchor(7,7,tileType);
+				abstractMap[i+1][j+1] = new Anchor(7,5,tileType);
+			}
+		}
+		
+		//Upper right crystal
+		abstractMap[7][135] = new Anchor(7,1,4);
+		abstractMap[7][136] = new Anchor(7,3,4);
+		abstractMap[8][135] = new Anchor(7,7,4);
+		abstractMap[8][136] = new Anchor(7,5,4);
+		for (int i=23;i<120;i+=16)
+		{
+			abstractMap[i][135] = new Anchor(7,1,0);
+			abstractMap[i][136] = new Anchor(7,3,0);
+			abstractMap[i+1][135] = new Anchor(7,7,0);
+			abstractMap[i+1][136] = new Anchor(7,5,0);
+		}
+		//Lower right crystal
+		 abstractMap[135][135] = new Anchor(7,1,4);
+		 abstractMap[135][136] = new Anchor(7,3,4);
+		 abstractMap[136][135] = new Anchor(7,7,4);
+		 abstractMap[136][136] = new Anchor(7,5,4);
+		 
+		boolean advance;
+
+		do {
+			advance = false;
+			for (int i = 0; i < 144; i++) {
+				for (int j = 0; j < 144; j++) {
+
+					if (abstractMap[i][j] == null) {
+						advance = true;
+					} else if (!abstractMap[i][j].hasPropagated()
+							&& abstractMap[i][j].getPropagationRadius() != 0) {
+						if (abstractMap[i][j].getDirection() == 1) {
+							abstractMap[i][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									8, abstractMap[i][j].getTileType());
+							abstractMap[i - 1][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									1, abstractMap[i][j].getTileType());
+							abstractMap[i - 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									2, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 2) {
+							abstractMap[i - 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									2, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 3) {
+							abstractMap[i - 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									2, abstractMap[i][j].getTileType());
+							abstractMap[i - 1][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									3, abstractMap[i][j].getTileType());
+							abstractMap[i][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									4, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 4) {
+							abstractMap[i][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									4, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 5) {
+							abstractMap[i][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									4, abstractMap[i][j].getTileType());
+							abstractMap[i + 1][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									5, abstractMap[i][j].getTileType());
+							abstractMap[i + 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									6, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 6) {
+							abstractMap[i + 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									6, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 7) {
+							abstractMap[i + 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									6, abstractMap[i][j].getTileType());
+							abstractMap[i + 1][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									7, abstractMap[i][j].getTileType());
+							abstractMap[i][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									8, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 8) {
+							abstractMap[i][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									8, abstractMap[i][j].getTileType());
+						}
+					}
+				}
+			}
+		} while (advance);
+		
+		return abstractMap;
+	}
+	
+	/*
+	 * Preset Map Three has four 16x16 crystal corners with all grass terrain in the middle,
+	 * "Grass Field"
+	 */
+	private Anchor[][] generatePreSetMapThree()
+	{
+		Anchor [][] abstractMap = new Anchor[144][144];
+		//Upper left crystal
+		abstractMap[7][7] = new Anchor(7,1,4);
+		abstractMap[7][8] = new Anchor(7,3,4);
+		abstractMap[8][7] = new Anchor(7,7,4);
+		abstractMap[8][8] = new Anchor(7,5,4);
+		for (int i=23;i<120;i+=16)
+		{
+			abstractMap[i][7] = new Anchor(7,1,0);
+			abstractMap[i][8] = new Anchor(7,3,0);
+			abstractMap[i+1][7] = new Anchor(7,7,0);
+			abstractMap[i+1][8] = new Anchor(7,5,0);
+		}
+		//Lower left crystal
+		abstractMap[135][7] = new Anchor(7,1,4);
+		abstractMap[135][8] = new Anchor(7,3,4);
+		abstractMap[136][7] = new Anchor(7,7,4);
+		abstractMap[136][8] = new Anchor(7,5,4);
+		
+		for (int i=7;i<136;i+=16)
+		{
+			for (int j=23;j<120;j+=16)
+			{
+				abstractMap[i][j] = new Anchor(7,1,0);
+				abstractMap[i][j+1] = new Anchor(7,3,0);
+				abstractMap[i+1][j] = new Anchor(7,7,0);
+				abstractMap[i+1][j+1] = new Anchor(7,5,0);
+			}
+		}
+		
+		//Upper right crystal
+		abstractMap[7][135] = new Anchor(7,1,4);
+		abstractMap[7][136] = new Anchor(7,3,4);
+		abstractMap[8][135] = new Anchor(7,7,4);
+		abstractMap[8][136] = new Anchor(7,5,4);
+		for (int i=23;i<120;i+=16)
+		{
+			abstractMap[i][135] = new Anchor(7,1,0);
+			abstractMap[i][136] = new Anchor(7,3,0);
+			abstractMap[i+1][135] = new Anchor(7,7,0);
+			abstractMap[i+1][136] = new Anchor(7,5,0);
+		}
+		//Lower right crystal
+		 abstractMap[135][135] = new Anchor(7,1,4);
+		 abstractMap[135][136] = new Anchor(7,3,4);
+		 abstractMap[136][135] = new Anchor(7,7,4);
+		 abstractMap[136][136] = new Anchor(7,5,4);
+		
+		
+		boolean advance;
+
+		do {
+			advance = false;
+			for (int i = 0; i < 144; i++) {
+				for (int j = 0; j < 144; j++) {
+
+					if (abstractMap[i][j] == null) {
+						advance = true;
+					} else if (!abstractMap[i][j].hasPropagated()
+							&& abstractMap[i][j].getPropagationRadius() != 0) {
+						if (abstractMap[i][j].getDirection() == 1) {
+							abstractMap[i][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									8, abstractMap[i][j].getTileType());
+							abstractMap[i - 1][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									1, abstractMap[i][j].getTileType());
+							abstractMap[i - 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									2, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 2) {
+							abstractMap[i - 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									2, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 3) {
+							abstractMap[i - 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									2, abstractMap[i][j].getTileType());
+							abstractMap[i - 1][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									3, abstractMap[i][j].getTileType());
+							abstractMap[i][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									4, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 4) {
+							abstractMap[i][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									4, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 5) {
+							abstractMap[i][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									4, abstractMap[i][j].getTileType());
+							abstractMap[i + 1][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									5, abstractMap[i][j].getTileType());
+							abstractMap[i + 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									6, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 6) {
+							abstractMap[i + 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									6, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 7) {
+							abstractMap[i + 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									6, abstractMap[i][j].getTileType());
+							abstractMap[i + 1][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									7, abstractMap[i][j].getTileType());
+							abstractMap[i][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									8, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 8) {
+							abstractMap[i][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									8, abstractMap[i][j].getTileType());
+						}
+					}
+				}
+			}
+		} while (advance);
+		
+		return abstractMap;
+	}
+	
+	/*
+	 * Preset Map Four has four 16x16 blocks of crystals at the corners with
+	 * the rest of the map all sand. "Desert Storm"
+	 * */
+	
+	private Anchor[][] generatePreSetMapFour()
+	{
+		Anchor [][] abstractMap = new Anchor[144][144];
+		//Upper left crystal
+		abstractMap[7][7] = new Anchor(7,1,4);
+		abstractMap[7][8] = new Anchor(7,3,4);
+		abstractMap[8][7] = new Anchor(7,7,4);
+		abstractMap[8][8] = new Anchor(7,5,4);
+		for (int i=23;i<120;i+=16)
+		{
+			abstractMap[i][7] = new Anchor(7,1,3);
+			abstractMap[i][8] = new Anchor(7,3,3);
+			abstractMap[i+1][7] = new Anchor(7,7,3);
+			abstractMap[i+1][8] = new Anchor(7,5,3);
+		}
+		//Lower left crystal
+		abstractMap[135][7] = new Anchor(7,1,4);
+		abstractMap[135][8] = new Anchor(7,3,4);
+		abstractMap[136][7] = new Anchor(7,7,4);
+		abstractMap[136][8] = new Anchor(7,5,4);
+		
+		for (int i=7;i<136;i+=16)
+		{
+			for (int j=23;j<120;j+=16)
+			{
+				abstractMap[i][j] = new Anchor(7,1,3);
+				abstractMap[i][j+1] = new Anchor(7,3,3);
+				abstractMap[i+1][j] = new Anchor(7,7,3);
+				abstractMap[i+1][j+1] = new Anchor(7,5,3);
+			}
+		}
+		
+		//Upper right crystal
+		abstractMap[7][135] = new Anchor(7,1,4);
+		abstractMap[7][136] = new Anchor(7,3,4);
+		abstractMap[8][135] = new Anchor(7,7,4);
+		abstractMap[8][136] = new Anchor(7,5,4);
+		for (int i=23;i<120;i+=16)
+		{
+			abstractMap[i][135] = new Anchor(7,1,3);
+			abstractMap[i][136] = new Anchor(7,3,3);
+			abstractMap[i+1][135] = new Anchor(7,7,3);
+			abstractMap[i+1][136] = new Anchor(7,5,3);
+		}
+		//Lower right crystal
+		 abstractMap[135][135] = new Anchor(7,1,4);
+		 abstractMap[135][136] = new Anchor(7,3,4);
+		 abstractMap[136][135] = new Anchor(7,7,4);
+		 abstractMap[136][136] = new Anchor(7,5,4);
+		
+		
+		boolean advance;
+
+		do {
+			advance = false;
+			for (int i = 0; i < 144; i++) {
+				for (int j = 0; j < 144; j++) {
+
+					if (abstractMap[i][j] == null) {
+						advance = true;
+					} else if (!abstractMap[i][j].hasPropagated()
+							&& abstractMap[i][j].getPropagationRadius() != 0) {
+						if (abstractMap[i][j].getDirection() == 1) {
+							abstractMap[i][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									8, abstractMap[i][j].getTileType());
+							abstractMap[i - 1][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									1, abstractMap[i][j].getTileType());
+							abstractMap[i - 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									2, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 2) {
+							abstractMap[i - 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									2, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 3) {
+							abstractMap[i - 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									2, abstractMap[i][j].getTileType());
+							abstractMap[i - 1][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									3, abstractMap[i][j].getTileType());
+							abstractMap[i][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									4, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 4) {
+							abstractMap[i][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									4, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 5) {
+							abstractMap[i][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									4, abstractMap[i][j].getTileType());
+							abstractMap[i + 1][j + 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									5, abstractMap[i][j].getTileType());
+							abstractMap[i + 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									6, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 6) {
+							abstractMap[i + 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									6, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 7) {
+							abstractMap[i + 1][j] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									6, abstractMap[i][j].getTileType());
+							abstractMap[i + 1][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									7, abstractMap[i][j].getTileType());
+							abstractMap[i][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									8, abstractMap[i][j].getTileType());
+						}
+						if (abstractMap[i][j].getDirection() == 8) {
+							abstractMap[i][j - 1] = new Anchor(
+									abstractMap[i][j].getPropagationRadius() - 1,
+									8, abstractMap[i][j].getTileType());
+						}
+					}
+				}
+			}
+		} while (advance);
+		
 		return abstractMap;
 	}
 
